@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap');
+body{background-color: #252322;
+    font-family: 'Roboto', sans-serif;
+    color: #f8f8f4;
+    margin:  0;  
+    padding: 0;
+    min-height: auto;
+}
+header{ 
+    background-color: #252322;
+    display: flex;
+    padding: 2em 4em 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ header img {
+    width: 60px;
+    height: 70px;
+}
+
+header div{
+    display:flex;
+    flex-direction: column;
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+      
+}
+
+nav ul li{ 
+    margin: 2em;
+    font-size: 20px;
+     
+}
+
+nav ul li a{ 
+    text-decoration: none;
+    color: #c3803a;
+    white-space: nowrap;
+    
+}
+
+h1{ 
+    color: #c3803a;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 65px;
+}
+
+header div {
+    white-space: nowrap;
+}
+
+.banner_home{
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.galeria{
+    display: flex;
+     width: 140px;
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px;
+}
+
+.galeria img {
+    width: 140px;
+    height: 10%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 20px;
+}
+    
+.pharagraph{
+    color: #f8f8f4;
+    max-width: 1200px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Cambria;
+    text-align: left;
+    line-height: 2;
+}
+.contenido{
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    align-items: flex-start;
+}
+
+footer{
+    color: #734f39;
+    background-color: #252322;
+    font-size: 30px;
+    color: #734f39;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px;
+    display:flex;
+    justify-content: center;
+    gap: 40px;  
+}
+
+main{
+    padding: 0;
+}
+
+/* ===== GALERY PAGE ===== */
+
+.noren-contenedor {
+    display: flex;
+    align-items: flex-start;
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    gap: 0em;
+    padding: 2em;
+    margin-top:-107px;
+}
+
+.bloque-historia{
+    display: flex;
+    gap: 8em;
+    padding: 2em;
+    align-items: center;
+    margin-right: 10em;
+    margin-top: -50px;
+    
+}
+
+.bloque-historia img{
+     width: 25%;
+     object-fit: cover;
+     margin-left: 27em;
+     margin-top:-25px;
+}
+
+.bloque-historia2{
+    display:flex;
+    flex-direction: row-reverse;
+    gap:8em;
+    padding: 2em;
+    align-items: left;
+    margin-left:28em;
+    margin-top:-40px;
+}
+
+.bloque-historia2 img{
+    width: 25%;
+    object-fit: cover;
+    margin-right: 14em;
+    margin-top:-12px;
+}
+
+.bloque-historia3 {
+    display: flex;
+    gap: 2em;    
+    padding: 5%; 
+    margin-top: -90px;
+    text-align: left ;
+    text-align: justify;  
+}
+
+.bloque-historia3 img{
+    width:  20em;
+    gap: 2em;    
+    padding: 5%;
+    margin-top: -60px;
+    object-fit: cover;
+    margin-left: 22em;  
+    }
