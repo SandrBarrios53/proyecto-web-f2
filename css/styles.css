@@ -174,3 +174,35 @@ main{
     object-fit: cover;
     margin-left: 22em;  
     }
+
+/* ===== about-us ===== */
+
+.portafolio-contenedor{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    padding: 2em;
+}
+ 
+.letrero-marca {
+    width: 15%;
+    object-fit: cover;
+    margin-top: -5em;
+    margin-left: 2em;
+}
+
+.nuestro-inicio {
+    display: flex;
+    gap: 4em;    
+    padding: 2em;
+    margin-top: -200px;
+    
+}
+
+.logo {
+   width: 10%;
+    object-fit: cover;
+    padding: 4em;   
+    margin-left: 25em; 
+}
+
