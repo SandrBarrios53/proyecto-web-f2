@@ -1,3 +1,4 @@
+/* ===== Home ===== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap');
 body{background-color: #252322;
     font-family: 'Roboto', sans-serif;
@@ -41,6 +42,10 @@ nav ul li a{
     color: #c3803a;
     white-space: nowrap;
     
+}
+
+.oculto {
+    display: none;
 }
 
 h1{ 
