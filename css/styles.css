@@ -61,24 +61,31 @@ header div {
 .banner_home{
     width: 100%;
     object-fit: cover;
-    height: 350px;
+    height: 325px;
     margin-bottom: 20px;
 }
 
 .galeria{
     display: flex;
-     width: 140px;
+     width: 180px;
     flex-direction: column;
-    gap: 50px;
-    margin: 20px;
+    gap: 25px;
+    margin: 15px;
 }
 
 .galeria img {
-    width: 140px;
+    width: 180px;
     height: 10%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    margin: 20px;
+    margin: 15px;
+}
+
+.slide {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
     
 .pharagraph1{

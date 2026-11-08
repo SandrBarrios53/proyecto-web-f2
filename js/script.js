@@ -1,4 +1,7 @@
+//prueba de coneccion a la consola//
 console.log("JSconectado");
+
+//Saludo de Bienvenida y hora//
 const date= new Date();
 const hour= date.getHours();
 let greeting;
@@ -9,6 +12,7 @@ if(hour<12){
 }else if (hour>=18 && hour < 24){
     greeting="Buenas Noches";}
 
+// creación de los menus desplegables en Galery y about-us, mouseover y mouseout//
 const titulo = document.getElementById("greeting");
 titulo.textContent = greeting + ", es un gusto saludarle";    
 
@@ -30,5 +34,16 @@ menuAboutus.addEventListener("mouseover", function(){
 menuAboutus.addEventListener("mouseout", function(){
     submenuAboutus.classList.add("oculto")
 });
+
+// creacion de slides pagina inicio//
+const slides = document.querySelectorAll(".slide");
+let actual = 0;
+function mostrarSiguiente(){
+    slides[actual].classList.add("oculto");
+    actual=(actual+1) % slides.length;
+    slides[actual].classList.remove("oculto");
+}
+setInterval(mostrarSiguiente, 3000);
+
 
 
