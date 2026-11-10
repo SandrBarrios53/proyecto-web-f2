@@ -17,7 +17,7 @@ header{
 
  header img {
     width: 60px;
-    height: 70px;
+    height: 60px;
 }
 
 header div{
@@ -51,7 +51,7 @@ nav ul li a{
 h1{ 
     color: #c3803a;
     font-family: 'Arial Narrow Bold', sans-serif;
-    font-size: 65px;
+    font-size: 60px;
 }
 
 header div {
@@ -87,7 +87,12 @@ header div {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-    
+
+.sliderBotones{
+    margin-bottom: 15px;
+    display: flex;
+    gap: 35px;
+}
 .pharagraph1{
     color: #f8f8f4;
     max-width: 1200px;
@@ -95,35 +100,37 @@ header div {
     font-weight: normal;
     font-family: Cambria;
     text-align: justify;
-    line-height: 2;
+    line-height: 2em;
 }
 
 .pharagraph2{
-    margin-top:3em;
+    margin-top:0em;
     margin-left: 0em;
     font-size: 20px;
     max-width: 1200px;
-    
+    font-family: Cambria;
+    line-height: 2em;
+    text-align: justify;
 }
 
 .contenido{
     display: flex ;
     gap: 2em;
-    padding: 5em;
+    padding: 0em;
     align-items: flex-start;
 }
 
 footer{
     background-color: #252322;
-    font-size: 30px;
+    font-size: 20px;
     color: #f8f8f4;
     font-family: Arial,sans-serif;
     text-align: center;
-    margin-bottom: 0;
-    padding: 50px;
+    margin-bottom: -5;
+    padding: 4px;
     display:flex;
     justify-content: center;
-    gap: 40px;
+    gap: 8px;
     text-decoration: none;  
 }
 
@@ -133,7 +140,7 @@ footer a{
 }
 
 main{
-    padding: 0;
+    padding: 3;
 }
 
 /* ===== GALERY PAGE ===== */
@@ -151,55 +158,60 @@ main{
 
 .bloque-historia{
     display: flex;
-    gap: 8em;
+    gap: 2em;
     padding: 2em;
     align-items: center;
-    margin-right: 10em;
+    text-align: justify;
+    margin-right: -15em;
     margin-top: -50px;
     
 }
 
 .bloque-historia img{
-     width: 25%;
+     width: 20%;
      object-fit: cover;
      margin-left: 27em;
-     margin-top:-25px;
+     margin-top:-30px;
 }
 
 .bloque-historia2{
     display:flex;
     flex-direction: row-reverse;
-    gap:8em;
-    padding: 2em;
+    gap: 2em;
+    padding: 5px;
     align-items: left;
     margin-left:28em;
-    margin-top:-40px;
+    text-align: justify;
+    margin-top:-10px;
 }
 
 .bloque-historia2 img{
-    width: 25%;
+    width: 10em;
     object-fit: cover;
-    margin-right: 14em;
-    margin-top:-12px;
+    margin-right: -10em;
+    margin-top:-10px;
+    gap: 2em;
 }
 
 .bloque-historia3 {
     display: flex;
-    gap: 2em;    
-    padding: 5%; 
-    margin-top: -90px;
-    text-align: left ;
-    text-align: justify;  
+    gap: 2em; 
+    padding: 2em; 
+    margin-top: 15px;
+    text-align: justify;
+    margin-left:150px; 
+
 }
 
 .bloque-historia3 img{
-    width:  20em;
+    width: 17em;
     gap: 2em;    
-    padding: 5%;
+    padding: 5em;
     margin-top: -60px;
-    object-fit: cover;
-    margin-left: 22em;  
-    }
+    margin-left: 150px;
+    display: inline;
+
+}
 
 /* ===== about-us ===== */
 
