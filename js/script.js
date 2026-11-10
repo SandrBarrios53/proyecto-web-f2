@@ -45,5 +45,18 @@ function mostrarSiguiente(){
 }
 setInterval(mostrarSiguiente, 3000);
 
+//creacion botones siguiente y anterior//
+const btnAnterior = document.getElementById("btnanterior");
+const btnSiguiente = document.getElementById("btnsiguiente");
 
+btnAnterior.addEventListener("click", function(){
+    slides[actual].classList.add("oculto");
+    actual = (actual-1+slides.length)% slides.length;
+    slides[actual].classList.remove("oculto");
+});
 
+btnSiguiente.addEventListener("click", function(){
+    slides[actual].classList.add("oculto");
+    actual = (actual+1) % slides.length;
+    slides[actual].classList.remove("oculto");
+});
