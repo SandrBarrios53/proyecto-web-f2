@@ -224,7 +224,7 @@ main{
 }
 
 .letrero-marca {
-    width: 150px;       /* Le damos un tamaño fijo adecuado en lugar de 10% */
+    width: 110px;       /* Le damos un tamaño fijo adecuado en lugar de 10% */
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -243,15 +243,17 @@ main{
     display: flex;
     flex-wrap: wrap;    /* Hace que bajen de línea si no caben en la pantalla */
     justify-content: center;
-    gap: 20px;          /* Espacio entre cada foto */
+    gap: 10px;          /* Espacio entre cada foto */
     padding: 2em;
 }
 
 .galeriaabout img {
-    width: 150px;       /* Todas las fotos tendrán este ancho */
+    width: 100px;       /* Todas las fotos tendrán este ancho */
     height: 200px;      /* Todas tendrán este alto */
     object-fit: cover;  /* Evita que las fotos se deformen o aplasten */
     border-radius: 9px;
+    padding-top: -30px;
+    
 }
 
 
