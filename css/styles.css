@@ -127,10 +127,10 @@ footer{
     font-family: Arial,sans-serif;
     text-align: center;
     margin-bottom: -5;
-    padding: 4px;
+    padding: 6px;
     display:flex;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     text-decoration: none;  
 }
 
@@ -215,33 +215,45 @@ main{
 
 /* ===== about-us ===== */
 
-.portafolio-contenedor{
+/* 1. Contenedor de la imagen principal y el texto de Misión */
+.portafolio-contenedor {
     display: flex;
     gap: 2em;
-    align-items: center;
+    align-items: flex-start; /* Sube el texto de Misión al inicio de la imagen */
     padding: 2em;
 }
- 
+
 .letrero-marca {
-    width: 15%;
+    width: 150px;       /* Le damos un tamaño fijo adecuado en lugar de 10% */
+    height: auto;
     object-fit: cover;
-    margin-top: -5em;
-    margin-left: 2em;
+    border-radius: 10px;
 }
 
-.nuestro-inicio {
+.Mision {
+    /* Quitamos display: flex y margin-top: -140px porque es solo un párrafo */
+    margin: 0;
+    padding-top: 10px;  /* Ajusta este valor si quieres bajar o subir un poco el texto */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* 2. Galería de las 5 fotos nuevas (controla el tamaño de todas a la vez) */
+.galeriaabout {
     display: flex;
-    gap: 4em;    
+    flex-wrap: wrap;    /* Hace que bajen de línea si no caben en la pantalla */
+    justify-content: center;
+    gap: 20px;          /* Espacio entre cada foto */
     padding: 2em;
-    margin-top: -200px;  
 }
 
-.logo {
-   width: 10%;
-    object-fit: cover;
-    padding: 4em;   
-    margin-left: 25em; 
+.galeriaabout img {
+    width: 150px;       /* Todas las fotos tendrán este ancho */
+    height: 200px;      /* Todas tendrán este alto */
+    object-fit: cover;  /* Evita que las fotos se deformen o aplasten */
+    border-radius: 9px;
 }
+
 
 @media (max-width: 768px) {
     header {
@@ -347,12 +359,6 @@ main{
     .bloque-historia img {
         width: 100%;
         margin: 0;
-    }
-
-    .nuestro-inicio{
-        flex-direction: column;
-        margin: 0;
-        padding: 1em;
     }
 
 }
