@@ -17,7 +17,7 @@ header{
 
  header img {
     width: 60px;
-    height: 25px;
+    height: 60px;
 }
 
 header div{
@@ -32,8 +32,8 @@ nav ul{
 }
 
 nav ul li{ 
-    margin: 2em;
-    font-size: 20px;
+    margin: 2px;
+    font-size: 15px;
      
 }
 
@@ -70,7 +70,6 @@ header div {
     gap: 1rem;
     padding: 2rem;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .galeria{
@@ -91,11 +90,12 @@ header div {
     max-width: 400px;
     aspect-ratio: 1/1;
     object-fit: cover;
+    
 }
 
 .botones{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     
 }
 .pharagraph1{
@@ -124,7 +124,7 @@ footer{
     color: #f8f8f4;
     font-family: Arial,sans-serif;
     text-align: center;
-    margin-bottom: -5;
+    margin-bottom: 20px;
     padding: 6px;
     display:flex;
     justify-content: center;
@@ -145,28 +145,28 @@ main{
 
 .noren-contenedor {
     display: flex;
-    align-items: flex-start;
-    height: 90px;
-    width: 90px;
+
+    height: 30px;
+    width: 25px;
     object-fit: cover;
-    gap: 0em;
-    padding: 2em;
+    gap: 0px;
+    padding: 2px;
     margin-top:-107px;
 }
 
 .bloque-historia{
     display: flex;
-    gap: 2em;
-    padding: 2em;
+    gap: 2rem;
+    padding: 2rem;
     align-items: center;
     text-align: justify;
-    margin-right: -15em;
+    margin-right: -15rem;
     margin-top: -50px;
     
 }
 
 .bloque-historia img{
-     width: 15px;
+     width: 15;
      object-fit: cover;
      margin-left: 12px;
      margin-top:-30px;
