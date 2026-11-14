@@ -10,9 +10,8 @@
 
 <body>
     <header>
-        <div>
-            
-           <img src="images/home/gato.png" alt="neko gato"></div>
+        <div class="logoContainer">  
+           <img src="images/home/gato.png" alt="neko gato">
             <h1>Design Bright</h1> 
         </div>
      
@@ -22,12 +21,13 @@
 
             <li id="menuGalery"><a href="html/Galery.html">Galery</a>
                 <ul id="submenuGalery" class="oculto">
-                    <li><a href="#">Aizome</a></li>
+                    <li><a href="html/Galery.html#aizome">Aizome</a></li>
                 </ul>
             </li>
+
             <li id="menuAboutus"><a href="html/about-us.html">about us</a>
                 <ul id="submenuAboutus" class="oculto">
-                    <li><a href="#">Letreros</a></li>
+                    <li><a href="html/about-us.html#letreros">Letreros</a></li>
                 </ul>
             </li>
             <li><a href="html/contact.html">contact</a></li>
@@ -41,42 +41,51 @@
     <img src="images/home/banner_home.jpeg" alt="Main Banner" class="banner_home">
 
   <div class="contenido">
+<!--columna izquierda: Carrusel y botones-->
+    <div class="carousel-Wrapper">
     <div class="galeria">
         <img src="images/home/1.jpg" alt="letrero neon 1" class="slide">
         <img src="images/home/2.jpg" alt="letrero neon 2" class="slide oculto">
         <img src="images/home/3.jpg" alt="letrero neon 3" class="slide oculto">
     </div>
 
+<!--Botones de navegación-->
   <div class="botones">
 <button type="button" id="btnanterior">Anterior</button>
 <button type="button" id="btnsiguiente">Siguiente</button>
-  </div>
+ </div>
+</div> 
 
+<!--columna derecha: Texto (un solo bloque)-->
+  <div class="texto-wrapper">
+    <h2 style="color: #c3803a; margin-bottom: 15px;">Un Diseño Brillante</h2>
 
+    <p class="paragraph1">
+         Representa identidad, lujo, estética y recordación de marca. En Design Bright transformamos tus ideas de negocio en publicidad de alto impacto
+         
+         a través de servicios de personalización únicos:
 
+        Letreros en acrílico modernos: Ideales para destacar tu esencia donde lo necesites.
 
-    <p="pharagraph1">Un Diseño Brillante representa identidad, lujo, estética, visualización y recordación de una idea o marca.
+        Publicidad en neón y avisos: Letreros y elementos visuales que potencian tu presencia.
+
+        Artículos promocionales y estampación: Productos de excelente durabilidad para fidelizar a tus clientes.
+
+        Impresión 3D: Nuestro nuevo servicio para llevar tus proyectos a otra dimensión.
+
+    <br><br>
+    Estamos ubicados en el barrio Los Cerezos. Si eres propietario de un negocio, músico o influencer, 
         
-     ¡Bienvenido!, Design Bright ofrece servicios de personalizacion,
-        que representan ideas de negocio o publicidad.
-
-       Diseños de letreros en Acrilico, modernos, ideales donde quieras hacer notar tu identidad.
-
-        Publicidad en Neon, creacion de letreros o tabloides que refuerzan la idetidad visual. 
-        
-        Por supesto estampacion y merchandisign textil o articulos promocionales de excelente durabilidad.</p>
-
-    <p="pharagraph2">Estamos ubicados en el barrio Los Cerezos. Si eres propietario de un negocio, músico o influencer, 
-        
-        o simplemente tienes una idea genial que quieres resaltar, ¡nosotros la hacemos realidad! </p>
-     
+        o tienes una idea genial que quieres resaltar, ¡tráela y nosotros la hacemos realidad! 
+    </p>
+    </div>   
   </div>      
 </main>
 
  <footer>
         <a href="https://wa.me/573158905072" target="_blank" rel="noopener">whatsapp</a>
         <a href="https://www.instagram.com/desing_brigth" target="_blank" rel="noopener">instagram</a>
-        <a href="#">facebook</a> 
+        
     </footer>
 <script src="js/script.js"></script>    
 </body>

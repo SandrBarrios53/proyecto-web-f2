@@ -10,10 +10,11 @@ body{background-color: #252322;
 header{ 
     background-color: #252322;
     display: flex;
-    padding: 2px 18px 2px;
+    padding: 20px 8px 20px;
     justify-content: space-between;
     align-items: center;
 }
+
 
  header img {
     width: 60px;
@@ -22,18 +23,26 @@ header{
 
 header div{
     display:flex;
-    flex-direction: column;
+    align-items:center;/*alinea el contenido del div al centro verticalmente*/
+    gap: 15px;/*espacio entre el logo y el texto*/
+}
+
+.h2#greeting{
+    font: size 1.5rem;
+    margin-right:2%;/*espacio entre el texto y el borde derecho del header*/
 }
 
 nav ul{
     display:flex;
     list-style: none;
+    gap:30px;/* Espacio entre lo elementos del menú.*/
+    padding:0% /* Elimino el padding predeterminado del navegador para la lista*/
       
 }
 
 nav ul li{ 
-    margin: 2px;
-    font-size: 15px;
+    margin: 0;
+    font-size: 1.2rem;/*tamaño de la fuente del menú*/
      
 }
 
@@ -41,6 +50,7 @@ nav ul li a{
     text-decoration: none;
     color: #c3803a;
     white-space: nowrap;
+    font-weight: bold; /*hago que el texto del menú sea más gruesp*/
     
 }
 
@@ -67,56 +77,58 @@ header div {
 
 .contenido{
     display: flex;
-    gap: 1rem;
-    padding: 2rem;
-    align-items: flex-start;
+    gap: 4rem;/*Espacio entre la columna izquerda (carrusel) y la columna derecha(texto)*/
+    padding: 2rem 5%;/*Espacio entre el contenido y los bordes de la pagina, que no se pegue a los bordes*/
+    align-items: flex-start;/*alinea el contenido al inicio de la columna derecha (texto)*/
 }
 
+/*===== Carrusel=====*/
 .galeria{
     display: flex;
-     width: 180px;
-    flex-direction: column;
+     width: 100px;/*Ajusta el ancho del contenedor de la galeria según mis necesidades*/
+    max-width:450px;/*ajusta el ancho máximo que tendrá la galeria para que no se deforme en pantallas grandes*/
 }
 
 .galeria img {
-    width: 180px;
-    height: 10%;
-    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 4/3; /* Formato rectangular ideal para fotos */
     object-fit: cover;
 }
 
 .slide {
     width: 100%;
     max-width: 400px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    
 }
 
 .botones{
     display: flex;
-    justify-content: center;
-    
+    justify-content: flex-start; /* 2. Botones alineados a la izquierda */
+    gap: 15px;
+    margin-top: 15px;
 }
-.pharagraph1{
+.botones button {
+    padding: 10px 20px;
+    background-color: #c3803a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*===== Arreglo de texto home=====*/
+.paragraph1{
     color: #f8f8f4;
-    max-width: 50ch;
+    max-width: 100%;/*que ocupe todo el ancho de la coumna derecha del contenido*/
     font-size: 1.1rem;
-    font-weight: normal;
-    font-family: Cambria, serif;
-    text-align: left;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify; /*alineacion  justificada del texto, que se vea limpio, ordenado*/
+    line-height: 1.8;/*espacio entre las lineas del texto,que no se vea amontonado*/
+    margin-bottom: 1rem;/*espacio entre el texto y el siguiente elemento, que no se vea pegado*/
     
 }
 
-.pharagraph2{
-    color: #f8f8f4;
-    max-width: 60ch;
-    font-size: 1rem;
-    font-family: Cambria, serif;
-    line-height: 1.6;
-    text-align: left;
-}
 
 footer{
     background-color: #252322;
