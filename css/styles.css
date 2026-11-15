@@ -11,10 +11,13 @@ header{
     background-color: #252322;
     display: flex;
     padding: 20px 8px 20px;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;/*alinea el contenido del header al inicio (izquierda de la pagina)*/
 }
 
+/* Le damos al menú la capacidad de centrarse */
+header nav {
+    margin: 0 auto; /* Esto empuja el menú al centro */
+}
 
  header img {
     width: 60px;
@@ -125,8 +128,7 @@ header div {
     font-family: 'Roboto', sans-serif;
     text-align: justify; /*alineacion  justificada del texto, que se vea limpio, ordenado*/
     line-height: 1.8;/*espacio entre las lineas del texto,que no se vea amontonado*/
-    margin-bottom: 1rem;/*espacio entre el texto y el siguiente elemento, que no se vea pegado*/
-    
+    margin-bottom: 1rem;/*espacio entre el texto y el siguiente elemento, que no se vea pegado*/ 
 }
 
 
@@ -155,73 +157,65 @@ main{
 
 /* ===== GALERY PAGE ===== */
 
-.noren-contenedor {
+.noren-contenedor img {
+    height: 320px;
+    width: auto;
+}
+
+.zigzag-wrapper {
     display: flex;
-
-    height: 30px;
-    width: 25px;
-    object-fit: cover;
-    gap: 0px;
-    padding: 2px;
-    margin-top:-107px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 5%; /* Reduje un poco el margen para que haya más espacio horizontal */
+    margin-bottom: 80px;
 }
 
-.bloque-historia{
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    align-items: center;
-    text-align: justify;
-    margin-right: -15rem;
-    margin-top: -50px;
-    
-}
-
-.bloque-historia img{
-     width: 15;
-     object-fit: cover;
-     margin-left: 12px;
-     margin-top:-30px;
-}
-
-.bloque-historia2{
-    display:flex;
-    flex-direction: row-reverse;
-    gap: 2em;
-    padding: 5px;
-    align-items: left;
-    margin-left:28em;
-    text-align: justify;
-    margin-top:-10px;
-}
-
-.bloque-historia2 img{
-    width: 10em;
-    object-fit: cover;
-    margin-right: -10em;
-    margin-top:-10px;
-    gap: 2em;
-}
-
+/* Estructura de los bloques */
+.bloque-historia,
+.bloque-historia2,
 .bloque-historia3 {
     display: flex;
-    gap: 2em; 
-    padding: 2em; 
-    margin-top: 15px;
-    text-align: justify;
-    margin-left:150px; 
-
+    align-items: center; 
+    gap: 30px; /* Espacio entre columnas */
 }
 
-.bloque-historia3 img{
-    width: 17em;
-    gap: 2em;    
-    padding: 5em;
-    margin-top: -60px;
-    margin-left: 150px;
-    display: inline;
-
+/* Magia del Zigzag para el bloque 2 */
+.bloque-historia2 {
+    flex-direction: row-reverse;
 }
+
+/* --- CONTROL DE LAS IMÁGENES (Para que no se hagan gigantes) --- */
+.noren-col,
+.imagen-col {
+    flex: 1; /* Toma 1 parte del espacio */
+    display: flex;
+    justify-content: right; /* Centra la imagen en su columna */
+}
+
+.noren-col img,
+.imagen-col img {
+    width: 100%; 
+    max-width: 250px; /* ¡ESTE ES EL TRUCO! Limita el ancho máximo a 250px */
+    max-height: 350px; /* Limita la altura máxima */
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* --- CONTROL DEL TEXTO --- */
+.texto-col {
+    flex: 2; /* El texto toma el doble de espacio que una imagen para que se lea bien */
+}
+
+.texto-col p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify; 
+    margin: 0;
+}
+
 
 /* ===== about-us ===== */
 
@@ -265,6 +259,23 @@ main{
     padding-top: -30px;
     
 }
+
+/*=====media queries=====*/
+
+/* --- RESPONSIVE (Para celulares) --- */
+@media (max-width: 768px) {
+    .bloque-historia,
+    .bloque-historia2,
+    .bloque-historia3 {
+        flex-direction: column; /* Todo se apila hacia abajo */
+        gap: 20px;
+    }
+
+    .texto-col {
+        flex: 1; /* En celular ocupa todo el ancho */
+    }
+}
+
 
 
 @media (max-width: 768px) {
